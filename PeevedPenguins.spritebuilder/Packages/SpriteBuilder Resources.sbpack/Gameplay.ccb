@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>16</integer>
+	<integer>17</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -30,7 +30,119 @@
 	<key>guides</key>
 	<array/>
 	<key>joints</key>
-	<array/>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<integer>16</integer>
+			<key>baseClass</key>
+			<string>CCPhysicsPivotJoint</string>
+			<key>children</key>
+			<array/>
+			<key>customClass</key>
+			<string></string>
+			<key>displayName</key>
+			<string>CCPhysicsPivotJoint</string>
+			<key>memberVarAssignmentName</key>
+			<string></string>
+			<key>memberVarAssignmentType</key>
+			<integer>1</integer>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>position</string>
+					<key>type</key>
+					<string>Position</string>
+					<key>value</key>
+					<array>
+						<real>230.11322021484375</real>
+						<real>112.57623291015625</real>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyA</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>9</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>10</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>collideBodies</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>anchorA</string>
+					<key>type</key>
+					<string>Point</string>
+					<key>value</key>
+					<array>
+						<real>82.276901245117188</real>
+						<real>63.872200012207031</real>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>breakingForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>maxForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>dampedSpringStiffness</string>
+					<key>type</key>
+					<string>Float</string>
+					<key>value</key>
+					<real>4</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>motorMaxForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+			</array>
+			<key>selected</key>
+			<true/>
+		</dict>
+	</array>
 	<key>jsControlled</key>
 	<false/>
 	<key>nodeGraph</key>
@@ -254,6 +366,97 @@
 								<string>_catapultArm</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
+								<key>physicsBody</key>
+								<dict>
+									<key>affectedByGravity</key>
+									<true/>
+									<key>allowsRotation</key>
+									<true/>
+									<key>bodyShape</key>
+									<integer>0</integer>
+									<key>collisionCategories</key>
+									<array/>
+									<key>collisionMask</key>
+									<array/>
+									<key>collisionType</key>
+									<string></string>
+									<key>cornerRadius</key>
+									<real>0.0</real>
+									<key>density</key>
+									<real>1</real>
+									<key>dynamic</key>
+									<true/>
+									<key>elasticity</key>
+									<real>0.30000001192092896</real>
+									<key>friction</key>
+									<real>0.30000001192092896</real>
+									<key>points</key>
+									<array>
+										<array>
+											<real>0.0</real>
+											<real>0.0</real>
+										</array>
+										<array>
+											<real>0.48427429795265198</real>
+											<real>137.31831359863281</real>
+										</array>
+										<array>
+											<real>37.135093688964844</real>
+											<real>179.44822692871094</real>
+										</array>
+										<array>
+											<real>41.623825073242188</real>
+											<real>107.68557739257812</real>
+										</array>
+										<array>
+											<real>15.297077178955078</real>
+											<real>110.59256744384766</real>
+										</array>
+										<array>
+											<real>19.415306091308594</real>
+											<real>23.154991149902344</real>
+										</array>
+									</array>
+									<key>polygons</key>
+									<array>
+										<array>
+											<array>
+												<real>0.48427429795265198</real>
+												<real>137.31831359863281</real>
+											</array>
+											<array>
+												<real>0.0</real>
+												<real>0.0</real>
+											</array>
+											<array>
+												<real>19.415306091308594</real>
+												<real>23.154991149902344</real>
+											</array>
+											<array>
+												<real>15.297077178955078</real>
+												<real>110.59256744384766</real>
+											</array>
+										</array>
+										<array>
+											<array>
+												<real>15.297077178955078</real>
+												<real>110.59256744384766</real>
+											</array>
+											<array>
+												<real>41.623825073242188</real>
+												<real>107.68557739257812</real>
+											</array>
+											<array>
+												<real>37.135093688964844</real>
+												<real>179.44822692871094</real>
+											</array>
+											<array>
+												<real>0.48427429795265198</real>
+												<real>137.31831359863281</real>
+											</array>
+										</array>
+									</array>
+								</dict>
 								<key>properties</key>
 								<array>
 									<dict>
@@ -362,6 +565,87 @@
 								<string></string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
+								<key>physicsBody</key>
+								<dict>
+									<key>affectedByGravity</key>
+									<true/>
+									<key>allowsRotation</key>
+									<true/>
+									<key>bodyShape</key>
+									<integer>0</integer>
+									<key>collisionCategories</key>
+									<array/>
+									<key>collisionMask</key>
+									<array/>
+									<key>collisionType</key>
+									<string></string>
+									<key>cornerRadius</key>
+									<real>0.0</real>
+									<key>density</key>
+									<real>1</real>
+									<key>dynamic</key>
+									<false/>
+									<key>elasticity</key>
+									<real>0.30000001192092896</real>
+									<key>friction</key>
+									<real>0.30000001192092896</real>
+									<key>points</key>
+									<array>
+										<array>
+											<real>16.912469863891602</real>
+											<real>8.3544692993164062</real>
+										</array>
+										<array>
+											<real>6.2606472969055176</real>
+											<real>41.264682769775391</real>
+										</array>
+										<array>
+											<real>68.290596008300781</real>
+											<real>79.326248168945312</real>
+										</array>
+										<array>
+											<real>168.34648132324219</real>
+											<real>52.108882904052734</real>
+										</array>
+										<array>
+											<real>215.28575134277344</real>
+											<real>36.305709838867188</real>
+										</array>
+										<array>
+											<real>213.51164245605469</real>
+											<real>12.843197822570801</real>
+										</array>
+									</array>
+									<key>polygons</key>
+									<array>
+										<array>
+											<array>
+												<real>213.51164245605469</real>
+												<real>12.843197822570801</real>
+											</array>
+											<array>
+												<real>215.28575134277344</real>
+												<real>36.305709838867188</real>
+											</array>
+											<array>
+												<real>168.34648132324219</real>
+												<real>52.108882904052734</real>
+											</array>
+											<array>
+												<real>68.290596008300781</real>
+												<real>79.326248168945312</real>
+											</array>
+											<array>
+												<real>6.2606472969055176</real>
+												<real>41.264682769775391</real>
+											</array>
+											<array>
+												<real>16.912469863891602</real>
+												<real>8.3544692993164062</real>
+											</array>
+										</array>
+									</array>
+								</dict>
 								<key>properties</key>
 								<array>
 									<dict>
@@ -1178,8 +1462,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
