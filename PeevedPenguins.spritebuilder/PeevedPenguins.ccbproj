@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>cocos2dUpdateIgnoredVersions</key>
-	<array>
-		<string>3.3.6</string>
-	</array>
+	<array/>
 	<key>defaultOrientation</key>
 	<integer>0</integer>
 	<key>designTarget</key>
@@ -82,6 +80,8 @@
 		</dict>
 		<key>PeevedPenguinsAssets</key>
 		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
